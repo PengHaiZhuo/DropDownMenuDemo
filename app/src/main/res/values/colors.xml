@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="title_black">#010103</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#EE1111</color>
+    <color name="black">#333333</color>
+    <color name="light_gray">#EFEFEF</color>
+
+    <color name="blue_item_selected">#4F8AFF</color>
+    <color name="blue_item_pressed">#6699ff</color>
+
+    <color name="recycleView_bg">#F0EFF5</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="divider">#ffd2d2d2</color>
+</resources>

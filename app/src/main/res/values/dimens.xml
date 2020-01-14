@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--常用间隔-->
+    <dimen name="view_margin_horizontal">16dp</dimen>
+    <dimen name="view_margin_vertical">24dp</dimen>
+    <dimen name="txt_margin_vertical">4dp</dimen>
+    <dimen name="txt_margin_left">72dp</dimen><!--文字左边对齐默认72dp-->
+    <dimen name="margin_horizontal">16dp</dimen><!--屏幕左右对齐默认16dp-->
+    <dimen name="divider_margin_vertical">8dp</dimen> <!--分隔线上下留白默认8dp-->
+
+    <!--常用宽高-->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="app_bar_height">56dp</dimen>
+    <dimen name="navigation_bar_height">48dp</dimen>
+    <dimen name="normal_view_hw">48dp</dimen>
+    <dimen name="view_height_normal">50dp</dimen>
+
+    <dimen name="item_height_60">60dp</dimen>
+    <dimen name="item_height_50">50dp</dimen>
+    <dimen name="item_height_15">15dp</dimen>
+</resources>

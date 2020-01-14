@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="vm"
+            type="com.phz.dropdownmenudemo.viewmodel.MainViewModel" />
+        <variable
+            name="OnClickListener"
+            type="android.view.View.OnClickListener" />
+        <import type="android.view.View"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_50"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_type"
+                android:clickable="true"
+                android:background="@drawable/selector_click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{OnClickListener}">
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/text_black_15"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/menu_item_name1"
+                    android:textColor="@{vm.selectMenu==1?@color/blue_item_selected:@color/black}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_type"
+                    android:layout_width="11dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@{vm.selectMenu==1?@drawable/arrow_up:@drawable/arrow_down}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_type"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_project"
+                android:clickable="true"
+                android:background="@drawable/selector_click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{OnClickListener}">
+                <TextView
+                    android:id="@+id/tv_project"
+                    style="@style/text_black_15"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/menu_item_name2"
+                    android:textColor="@{vm.selectMenu==2?@color/blue_item_selected:@color/black}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_project"
+                    android:layout_width="11dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@{vm.selectMenu==2?@drawable/arrow_up:@drawable/arrow_down}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_project"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_time"
+                android:clickable="true"
+                android:background="@drawable/selector_click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{OnClickListener}">
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_black_15"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/menu_item_name2"
+                    android:textColor="@{vm.selectMenu==3?@color/blue_item_selected:@color/black}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_time"
+                    android:layout_width="11dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@{vm.selectMenu==3?@drawable/arrow_up:@drawable/arrow_down}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_time"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/recycleView_bg">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@android:color/white"
+                android:overScrollMode="ifContentScrolls"/>
+            <View
+                android:id="@+id/view_light_transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/thirty_transparent_black"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

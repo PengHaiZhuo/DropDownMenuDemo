@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DropDownMenuDemo</string>
+    <string name="title_name">标题</string>
+    <string name="menu_item_name1">业务类型</string>
+    <string name="menu_item_name2">计费项目</string>
+    <string name="menu_item_name3">时间</string>
+
+    <!--服务列表-->
+    <string-array name="service_list">
+        <item>资产账户</item>
+        <item>报事报修</item>
+        <item>车辆</item>
+        <item>放行条</item>
+        <item>租赁管理</item>
+        <item>商品</item>
+        <item>工程施工</item>
+    </string-array>
+
+    <!--账单列表-->
+    <string-array name="biil_list">
+        <item>物业管理费</item>
+        <item>本金基金</item>
+        <item>水费</item>
+        <item>污水处理费</item>
+        <item>垃圾处理费</item>
+        <item>电费</item>
+        <item>账单总预览</item>
+    </string-array>
+</resources>
